@@ -8,7 +8,7 @@ I learned my basic stuff from the “Zero To Hero” course by Andrej Karpathy. 
 
 Feel free to ask any questions. You can find me through:
  - LinkedIn – www.linkedin.com/in/azamatzakirovch
- - Telegram – t.me/azamatzakirovch
+ - Telegram – t.me/azamatzakirovch](https://t.me/azamatzakirovch
  - Email – a.eshqoziyev@newuu.uz
    
 I will answer your messages as much as I can and as soon as possible.
