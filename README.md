@@ -4,7 +4,7 @@ I learned my basic stuff from the “Zero To Hero” course by Andrej Karpathy. 
 
  - Micrograd Library – https://github.com/E-Zakirovich/Micrograd
  - Makemore part-one - https://github.com/E-Zakirovich/makemore-part-one
- - ongoing ...
+ - Image recognision for handwritten digits - https://github.com/E-Zakirovich/recognise-handwritten-digits
 
 Feel free to ask any questions. You can find me through:
  - LinkedIn – www.linkedin.com/in/azamatzakirovch
