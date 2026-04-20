@@ -4,6 +4,7 @@ I learned my basic stuff from the “Zero To Hero” course by Andrej Karpathy. 
 
  - Micrograd Library – https://github.com/E-Zakirovich/Micrograd
  - Makemore part-one - https://github.com/E-Zakirovich/makemore-part-one
+ - Recognise Handwritten Digits with MNIST - https://github.com/E-Zakirovich/Handwritten-Digits
 
 Feel free to ask any questions. You can find me through:
  - LinkedIn – www.linkedin.com/in/azamatzakirovch
