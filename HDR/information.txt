@@ -1,1 +1,0 @@
-Hello, here I am going to create a project about handwritten digit recognition with MNIST library.
