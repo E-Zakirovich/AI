@@ -20,10 +20,17 @@ import struct
 
 class Loader:
 	def load_images(self, filepath):
-		pass
+		with open(filepath, "rb") as f:
+			magic, num, row, col = struct.unpack(">IIII", f.read(16))
+			images = np.frombuffer(f.read(), dtype=np.uint8)
+            images = images.reshape(num, rows * cols)
+        return images
 	
-	def load_labels(self, filapath):
-		pass
+	def load_labels(self, filepath):
+		with open(filepath, "rb") as f:
+			magic, num = struct.unpack('>II', f.read(8))
+            labels = np.frombuffer(f.read(), dtype=np.uint8)
+        return labels
 		
 	def train_data(self):
 		pass
