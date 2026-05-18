@@ -1,9 +1,8 @@
-from src.data import Loader
+# from src.data import Loader
+from src.data.preprocessor import test_data_loader, train_data_loader
 
-loader = Loader()
 
-
-images, labels = loader.train_data()
+images, labels = train_data_loader()
 
 current = images[35343]
 # print(labels[3])
