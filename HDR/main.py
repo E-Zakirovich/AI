@@ -1,18 +1,16 @@
-from src.core import ActivationFunctions
+from src.core import Loss
 import numpy as np
 
-Z = np.array([[1.0, -2.0, 3.0]])
 
-activators = ActivationFunctions()
+loss = Loss()
 
-relu_value = activators.ReLU(Z)
+y_pred = np.array([[1.0, -2.0, 3.0]])
+y_actual = np.array([[0, -2.0, 2.0]])
 
-derivative_relu = activators.ReLU_Derivation(Z)
-
-softmax_value = activators.softmax(Z)
+cross_entropy_loss = loss.cross_entropy(y_actual, y_pred)
+derivative = loss.cross_entropy_derivative(y_actual, y_pred)
 
 print(f"""
-ReLU: {relu_value}
-Derivative of ReLU: {derivative_relu}
-Softmax: {softmax_value}
+This is the loss: {cross_entropy_loss}
+This is the derivative of loss function: {derivative}
 """)
