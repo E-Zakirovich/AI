@@ -1,16 +1,26 @@
-from src.core import Loss
+from src.core import Metrics
 import numpy as np
 
+accuracy_level = Metrics()
 
-loss = Loss()
+y_pred = np.array(
+[
+	[0.8, 0.1, 0.1], 
+	[0.1, 3.0, 6.0], 
+	[0.1, 0.0, 9.0], 
+	[0.1, 8.0, 0.1]
+]
+)
 
-y_pred = np.array([[1.0, -2.0, 3.0]])
-y_actual = np.array([[0, -2.0, 2.0]])
+y_actual = np.array(
+[
+	[1.0, 0.0, 0.4], 
+	[0.0, 1.0, 0.0], 
+	[0.0, 0.0, 1.0], 
+	[0.0, 1.0, 0.0]
+]
+)
 
-cross_entropy_loss = loss.cross_entropy(y_actual, y_pred)
-derivative = loss.cross_entropy_derivative(y_actual, y_pred)
+p = accuracy_level.accuracy(y_pred, y_actual)
 
-print(f"""
-This is the loss: {cross_entropy_loss}
-This is the derivative of loss function: {derivative}
-""")
+print("Accuracy:", p)

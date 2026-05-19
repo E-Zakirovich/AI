@@ -13,5 +13,7 @@ I created a class and name it Metrics. Inside of this class there is only one me
 import numpy as np
 
 class Metrics:
-	def accuracy(y_pred, y_actual):
-		pass
+	def accuracy(self, y_pred, y_actual):
+		predictions = np.argmax(y_pred, axis = 1)
+		actual = np.argmax(y_actual, axis = 1)
+		return np.mean(actual == predictions)
