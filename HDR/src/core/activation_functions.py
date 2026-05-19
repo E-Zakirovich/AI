@@ -29,10 +29,11 @@ import numpy as np
 class ActivationFunctions:
 	
 	def ReLU(self, Z):
-		pass
+		return np.max(Z, 0)
 		
 	def ReLU_Derivation(self, Z):
-		pass
+		return (Z>0).astype(float)
 		
 	def softmax(Z):
-		pass
+		exp_Z = np.exp(Z - np.max(Z, axis=1, keepdims=True))
+		return exp_Z / np.sum(exp_Z, axis=1, keepdims=True)
