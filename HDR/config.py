@@ -9,3 +9,4 @@ TRAIN_LABELS = "data/train-labels.idx1-ubyte"
 # image settings
 MAX_GREYSCALE = 255
 NUM_CLASSES = 10
+
