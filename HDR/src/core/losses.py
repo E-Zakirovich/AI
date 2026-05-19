@@ -22,7 +22,9 @@ import numpy as np
 class Loss:
 	
 	def cross_entropy(self, y_actual, y_pred):
-		pass
+		n = y_pred.shape[0]
+		log_pred = np.log(y_pred + 1e-08)
+		return -np.sum(y_actual * log_pred) / n
 		
 	def cross_entropy_derivative():
-		pass
+		return y_pred - y_actual
