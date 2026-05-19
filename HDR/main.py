@@ -1,22 +1,18 @@
-# from src.data import Loader
-from src.data.preprocessor import test_data_loader, train_data_loader
+from src.core import ActivationFunctions
+import numpy as np
 
+Z = np.array([[1.0, -2.0, 3.0]])
 
-images, labels = train_data_loader()
+activators = ActivationFunctions()
 
-current = images[35343]
-# print(labels[3])
+relu_value = activators.ReLU(Z)
 
-counter=0
-line = ""
-while counter < 744:
-	if current[counter] == 0:
-		line+=" "
-	elif current[counter] > 0 and current[counter] <128:
-		line+="*"
-	else:
-		line+="#"
-	if counter%28==0:
-		print(line)
-		line=""
-	counter+=1
+derivative_relu = activators.ReLU_Derivation(Z)
+
+softmax_value = activators.softmax(Z)
+
+print(f"""
+ReLU: {relu_value}
+Derivative of ReLU: {derivative_relu}
+Softmax: {softmax_value}
+""")
