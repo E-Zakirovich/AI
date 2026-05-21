@@ -18,11 +18,11 @@ with backpropagation algorithm. It will help me to improve correctness of the ne
 mentioned in relu(Z) method explanation.
 
 softmax(Z) - this method will help me to make a decision. In output layer, I am going to have
- total ten neurons. Each neuron will return their prediction. Sum of predictions going to be 
- higher than one and it is not accurate to get highest predicted value as a result. In this 
- case, I need to squeeze all results. After squeeze them sum of neurons going to be 1. Then 
- I will pick up most high predicted value. Formula - search it https://en.wikipedia.org/wiki/Softmax_function
- """
+total ten neurons. Each neuron will return their prediction. Sum of predictions going to be 
+higher than one and it is not accurate to get highest predicted value as a result. In this 
+case, I need to squeeze all results. After squeeze them sum of neurons going to be 1. Then 
+I will pick up most high predicted value. Formula - search it https://en.wikipedia.org/wiki/Softmax_function
+"""
 
 import numpy as np
 

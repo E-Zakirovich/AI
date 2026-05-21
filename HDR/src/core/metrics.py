@@ -7,7 +7,7 @@ result like - "my model is predicting about 96% correct" and so on. Thats why I 
 metrics.py file. 
 
 I created a class and name it Metrics. Inside of this class there is only one method.
- It is accuracy(y_pred, y_actual) and it will calculate percentage
+It is accuracy(y_pred, y_actual) and it will calculate percentage
 """
 
 import numpy as np

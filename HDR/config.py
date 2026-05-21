@@ -10,3 +10,7 @@ TRAIN_LABELS = "data/train-labels.idx1-ubyte"
 MAX_GREYSCALE = 255
 NUM_CLASSES = 10
 
+# model settings
+INPUT_SIZE = 784 # 28 x 28 pixel image, total 784
+HIDDEN_LAYER_SIZE = 128
+OUTPUT_LAYER_SIZE = 10
