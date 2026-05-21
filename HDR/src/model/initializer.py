@@ -31,13 +31,18 @@ import numpy as np
 class Initializer:
 	
 	def xavier(self, rows, cols):
-		pass
+		limit = np.sqrt(6/(rows + cols))
+		return np.random.uniform(-limit, limit, (rows, cols))
 		
 	def zeros(self, sizes):
-		pass
+		return np.zeros((1, sizes))
 		
 	def initialize_weights(self):
-		pass
+		w1 = self.xavier(INPUT_SIZE, HIDDEN_LAYER_SIZE)
+		w2 = self.xavier(HIDDEN_LAYER_SIZE, OUTPUT_LAYER_SIZE)
+		return w1, w2
 		
 	def initialize_biases(self):
-		pass
+		b1 = self.zeros(HIDDEN_LAYER_SIZE)
+		b2 = self.zeros(OUTPUT_LAYER_SIZE)
+		return b1, b2
