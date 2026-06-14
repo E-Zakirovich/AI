@@ -1,1 +1,3 @@
-print("Assalamu Alaykum, how are you friend?")
+from src.loader.loader import Loader
+
+a = Loader()
